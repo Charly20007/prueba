@@ -1,54 +1,31 @@
-# React + TypeScript + Vite
+# 🛒 Prueba Técnica - Dashboard de Ecommerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es un **Dashboard de Ecommerce** construido con **React, Tailwind CSS, Recharts y Vite**.  
+Incluye funcionalidades avanzadas como **búsqueda en tablas, gráficos interactivos**.  
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías usadas
+- **React** 
+- **Tailwind CSS** 
+- **Framer Motion**
+- **React Router DOM** 
+- **Recharts** (Gráficos analíticos)
+- **ESLint & TypeScript** 
+- **Vite** 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔑 Credenciales para iniciar sesión
 
-## Expanding the ESLint configuration
+Para acceder al Dashboard, usa cualquiera de las siguientes credenciales:  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| Usuario      | Contraseña   |
+|-------------|-------------|
+| **admin**   | `1234`    |
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🛠 Instalación y ejecución
+### 1️⃣ **Requisitos previos**
+✔ **Node.js 18.x o superior**  
+Puedes verificar tu versión con:  
+```bash
+node -v
+npm install
+npm run dev
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
