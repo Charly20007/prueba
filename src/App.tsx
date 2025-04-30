@@ -1,12 +1,13 @@
-import './App.css'
+import AppRoutes from "./routes";
+import { UserProvider } from "./context/UserContext";
 
 function App() {
-
   return (
-    <>
-      <p>Estructura de proyectos</p>
-    </>
-  )
+    <UserProvider>
+      <AppRoutes />
+    </UserProvider>
+  );
 }
 
-export default App
+export default App;
+
